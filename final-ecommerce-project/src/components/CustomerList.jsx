@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import {  ListGroup, Container } from 'react-bootstrap';
 
 
-function CustomerAccounts() {
+function CustomerList() {
     const [customers, setCustomers] = useState([]);
     const [errors, setErrors] = useState([]);
     const [error, setError] = useState('');

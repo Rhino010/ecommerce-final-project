@@ -1,13 +1,16 @@
-import { useState } from 'react'
 import './App.css'
-import 
+import Products from './components/Products'
+import CustomerList from './components/CustomerList'
+import CustomerForm from './components/CustomerForm'
+
 
 function App() {
 
   return (
     <>
-
-      
+      <Products />
+      <CustomerList />
+      <CustomerForm />
     </>
   )
 }
