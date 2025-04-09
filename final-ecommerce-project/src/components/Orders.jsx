@@ -45,6 +45,8 @@ return (
 
 };
 
+export default Orders;
+
 
 
 

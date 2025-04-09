@@ -70,7 +70,8 @@ const CustomerForm = () => {
                     type='text'
                     name='name'
                     value={customer.name}
-                    onChange={handleChange} />
+                    onChange={handleChange} 
+                    />
                     <Form.Control.Feedback type='invalid'>
                         {errors.name}
                     </Form.Control.Feedback>
