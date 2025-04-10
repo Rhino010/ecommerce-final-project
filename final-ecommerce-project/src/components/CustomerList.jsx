@@ -11,8 +11,6 @@ import Row from "react-bootstrap/Row";
 
 function CustomerList() {
     const [customers, setCustomers] = useState([]);
-    const [errors, setErrors] = useState([]);
-    const [customerId, setCustomerId] = useState('');
     const [error, setError] = useState('');
     const {id} = useParams();  {/**useParams gets the id from the url id parameter */}
 
@@ -27,10 +25,6 @@ function CustomerList() {
     useEffect(() => {
         fetchCustomers();
     }, []);
-
-    const selectCustomer = (id) => {
-        setCustomerId(id);
-     }  
 
 
     return (

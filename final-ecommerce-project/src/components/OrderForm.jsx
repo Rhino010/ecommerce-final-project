@@ -7,7 +7,6 @@ import dayjs from 'dayjs';
 
 
 const OrderForm = () => {
-    const [order, setOrder] = useState({customer_id: '', date: ''});
     const [products, setProducts] = useState([]);
     const [quantities, setQuantities] = useState({});
     const [customer, setCustomer] = useState([]);
@@ -55,7 +54,6 @@ const handleSubmit = async (event) => {
     };
 
     try {
-        console.log('ORDER SENDING:', newOrder);
 
         await axios.post(`http://127.0.0.1:5000/orders`, newOrder);
         setShowSuccessModal(true);
@@ -70,7 +68,7 @@ const handleSubmit = async (event) => {
 const handleClose = () => {
     setShowSuccessModal(false);
     setProducts([])
-    navigate('/orders');
+    navigate('/customers');
 };
 return (
     <div className="d-flex justify-content-center align-items-center vh-100 vw-100 bg-primary-subtle">
